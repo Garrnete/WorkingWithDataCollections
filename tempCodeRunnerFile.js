@@ -46,17 +46,17 @@ for (let i = 0; i < csvStr.length; i++) {
 // Part 1: Refactoring Old Code
 // // Split rows by newline
 
-let rows = csvStr.split('\n');
+// let rows = csvStr.split('\n');
 
 // Split each row into columns
-let table = rows.map(row => row.split(','));
+ let table = rows.map(row => row.split(','));
 
 console.log(table);
 
 
 // Part 2: Expanding Functionality
 // Step: Split the first row (header) by commas
-let headerRow = rows[0].split(',');
+// let headerRow = rows[0].split(',');
 
 // Declare a variable to store the number of columns
 let numColumns = headerRow.length;
@@ -66,7 +66,7 @@ console.log("Number of columns:", numColumns); // Output: 4
 // Store your results in a two-dimensional array.
 // // Each row should be its own array, with individual entries for each column.
 // // Each row should be stored in a parent array, with the heading row located at index 0.
-//let table = rows.map(row => row.split(','));
+// let table = rows.map(row => row.split(','));
 
 // Cache this two-dimensional array in a variable for later use.
 let cachedTable = table;
